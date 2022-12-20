@@ -29,9 +29,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput);
         transform.Translate(direction * speed * Time.deltaTime);
 
-        Debug.Log(horizontalInput); // -1 to 1 when pressed
-        Debug.Log(verticalInput); //-1 to 1 when pressed
-
         //Rotation needs to be -5 to 5, locally
         cameraMovement();        
     }
