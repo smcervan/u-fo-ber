@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
-    float rotationSpeed = 20f;
+    float rotationSpeed = 35f;
 
     public GameObject cube;
     public Transform cubeTransform;
