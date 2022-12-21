@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject cube;
     public Transform cubeTransform;
 
+    RaycastHit hit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput);
         transform.Translate(direction * speed * Time.deltaTime);
 
-        //Rotation needs to be -5 to 5, locally
         cameraMovement();        
     }
 
